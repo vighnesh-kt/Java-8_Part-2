@@ -1,4 +1,4 @@
-package DesignPatterns.Singleton;
+package DesignPatterns.Creational.Singleton;
 
 public class EagerInitialization {
 	

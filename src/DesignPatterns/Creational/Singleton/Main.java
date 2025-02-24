@@ -1,4 +1,4 @@
-package DesignPatterns.Singleton;
+package DesignPatterns.Creational.Singleton;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
