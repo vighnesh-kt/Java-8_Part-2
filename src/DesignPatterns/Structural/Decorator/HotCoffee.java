@@ -1,4 +1,4 @@
-package DesignPatterns.Structural;
+package DesignPatterns.Structural.Decorator;
 
 
 public class HotCoffee implements Coffee{

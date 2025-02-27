@@ -1,8 +1,8 @@
-package DesignPatterns.Structural;
+package DesignPatterns.Structural.Decorator;
 
 public abstract class CoffeeDecorator implements Coffee{
 	
-	protected Coffee coffee;
+	private Coffee coffee;
 	
 	public CoffeeDecorator(Coffee coffee) {
 		this.coffee=coffee;
@@ -21,3 +21,11 @@ public abstract class CoffeeDecorator implements Coffee{
 
 
 }
+
+//public interface CoffeeDecorator extends Coffee{
+//		
+//	public int getPrice();
+//
+//	public String getCoffeeType();
+//	
+//}
