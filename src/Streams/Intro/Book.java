@@ -23,7 +23,7 @@ public class Book {
 	        List<Book> books = new ArrayList<>();
 
 	        books.add(new Book("Dracula", "Bram Stoker", "Horror", 4.5));
-	        books.add(new Book("Frankenstein", "Mary Shelley", "Horror", 4.2));
+	        books.add(new Book("Frankenstein", "Mary Shelley", "Comedy", 4.2));
 	        books.add(new Book("It", "Stephen King", "Horror", 4.7));
 
 	        return books;
