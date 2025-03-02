@@ -7,10 +7,10 @@ public class Car extends Vehicle{
 	}
 
 	@Override
-	public void manifacture() {
+	public void manufacture() {
 		// TODO Auto-generated method stub
 		System.out.println("For car");
-		workshop.work();
+		workshop.work();//this will call the work method for passed workshop
 	}
 
 }
