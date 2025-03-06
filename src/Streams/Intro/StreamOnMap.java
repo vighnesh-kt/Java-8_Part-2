@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+import java.util.stream.Stream.Builder;
 
 public class StreamOnMap {
 	
@@ -36,7 +37,21 @@ public class StreamOnMap {
 		
 		// Array class stream 
 		int [] arr= {1,2,3,4};
+		
+		//if primitive array it convert into primitive stream
 		IntStream stream = Arrays.stream(arr);
+		
+		Integer [] arr2= {1,2,3,4};
+		
+		//if non primitive array it convert into non primitive stream
+		Stream<Integer> stream2 = Arrays.stream(arr2);
+		
+		//builder stream
+		Builder<Object> builder = Stream.builder();
+		builder.add(1);
+		
+//		/some code
+		Stream<Object> stream3 = builder.build();//return stream
 		
 		
 	}
