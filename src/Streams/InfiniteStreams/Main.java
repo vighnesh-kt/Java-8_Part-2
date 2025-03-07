@@ -16,7 +16,7 @@ public class Main {
 		//java 9 overloaded
 //		Stream.iterate(10, i->i<25,i->i+1).forEach(i->System.out.println(i));
 		
-		//generate
+//		generate
 //		Stream.generate(()->"Run").forEach(s->System.out.println(s));
 		
 		//random number

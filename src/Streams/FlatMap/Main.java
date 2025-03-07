@@ -6,15 +6,27 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
+		Stream.of("hello");
 		
-		Stream<Integer> of = Stream.of(1,2);
-		Stream<Integer> of2 = Stream.of(3,4);
+		Stream<String> of = Stream.of("hello","there");
+		Stream<String> of2 = Stream.of("learning","java");
 		
-		Stream<Stream<Integer>> of3 = Stream.of(of,of2);
+		Stream<Stream< String >> of3 = Stream.of(of,of2);
 		
-		Stream<Integer> flatMap = Stream.of(of,of2).flatMap(s->s);
+		Stream< String > flatMap = of3.flatMap(s->s);
 		
 		flatMap.forEach(s->System.out.println(s));
+//		of3.flatMap(s->s).forEach(s->System.out.println(s));
+		
+		
+		Stream<String> third = Stream.of("3rd level");
+		Stream<Stream<String>> second = Stream.of(third);
+		Stream<Stream<Stream<String>>> first = Stream.of(second);
+		
+		third.forEach(s->System.out.println(s));
+		
+		second.forEach(s->System.out.println(s));
+		
 	}
 
 }
