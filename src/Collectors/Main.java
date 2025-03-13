@@ -17,6 +17,9 @@ public class Main {
 		Path p=Paths.get("/Users/BaBa/workspace-spring-tool-suite-4-4.26.0.RELEASE/Java_8_Part_2/src/Collectors/EmployeeData.txt");
 		System.out.println(p.getFileName());
 		
+//		String s="aabbcc hbvkhv lskd";
+		
+		
 		//to read data 
 		try (Stream<String> lines = Files.lines(p)){
 			lines.flatMap(s->Arrays.stream(s.split("\n"))).forEach(s->System.out.println(s));
