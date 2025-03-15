@@ -97,13 +97,14 @@ public class Employee implements Comparable<Employee>{
 
 	@Override
 	public int compareTo(Employee o) {
-		
-		if(this.id < o.id)
-		return -1;
-		else if(this.id > o.id)
-			return 1;
-		else
-			return 0;
+		// TODO Auto-generated method stub
+		return Integer.compare(this.id, o.id);
 	}
+
+//	@Override
+//	public int compareTo(Employee o) {
+//		
+//		if(this.id>)
+//	}
 
 }
